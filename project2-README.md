@@ -1,8 +1,5 @@
-// function to generate markdown for README
-function generateMarkdown(answers) {
-  console.log(answers);
-  return `
-  # ${answers.title}
+
+  # project2
   
   ## Table of Contents
 
@@ -18,42 +15,38 @@ function generateMarkdown(answers) {
 
   ### Project Description
 
-  ${answers.description}
+  This project generates a readme file
 
   _________________________________
 
   ### Installation Instructions
   
-  ${answers.installationInstructions}
+  None
 
   _________________________________
 
   ### Usage Information
   
-  ${answers.usageInformation}
+  none
 
   _________________________________
 
   ### Contribution Guidelines
   
-  ${answers.contributionGuidelines}
+  none
   _________________________________
 
   ### Test Instructions
   
-  ${answers.testInstructions}
+  none
   _________________________________
 
   ## Contact Information
-  * ${answers.name}
-  [E-mail:] ${answers.email}
-  [Github:] ${answers.github}
+  * Ivy bean
+  [E-mail:] ivieking@gmail.com
+  [Github:] ivybean
 
   ### User License
   
-  ${answers.userLicense}
+  None
 
-`;
-}
-
-module.exports = generateMarkdown;
