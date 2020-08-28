@@ -1,7 +1,7 @@
 
   # ReadMe Generator
   
-  ![](https://img.shields.io/badge/MIT-yellowgreen)
+  ![Badge](https://img.shields.io/badge/license-MIT-green)
 
   ## Table of Contents
 

@@ -10,11 +10,11 @@ function getLicenseIconURL(answers) {
 
   } else if (answers.userLicense === "BSD 2-Clause License") {
     licenseURL = "https://opensource.org/licenses/BSD-2-Clause";
-    licenseIcon = "BSD2-yellow";
+    licenseIcon = "BSD2-green";
 
 } else if (answers.userLicense === "BSD 3-Clause License") {
     licenseURL = "https://opensource.org/licenses/BSD-3-Clause";
-    licenseIcon = "BSD3-yellow";
+    licenseIcon = "BSD3-green";
 
   } else if (answers.userLicense === "Boost Software License 1.0") {
     licenseURL = "https://www.boost.org/LICENSE_1_0.txt";
@@ -65,7 +65,7 @@ function generateMarkdown(answers) {
   return `
   # ${answers.title}
   
-  ![](https://img.shields.io/badge/License-${licenseIcon})
+  ![Badge](https://img.shields.io/badge/License-${licenseIcon})
 
   ## Table of Contents
 
