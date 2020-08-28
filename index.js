@@ -53,7 +53,7 @@ function promptUser() {
     {
       type: "list",
       message: "Choose a license for your applicaiton.",
-      choices: ["MIT", "None", "Apache 3.0"],
+      choices: ["Apache 3.0", "BSD 2-Clause License", "BSD 3-Clause License", "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser Public License v2.1", "GNU General Public License v3.0",  "Mozilla Public License 2.0", "MIT License"],
       name: "userLicense",
     },
   ]).then(function(answers){
