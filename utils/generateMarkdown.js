@@ -6,49 +6,51 @@ let licenseURL;
 function getLicenseIconURL(answers) {
   if (answers.userLicense === "Apache License 2.0") {
     licenseURL = "https://www.apache.org/licenses/LICENSE-2.0";
-    licenseImg = "Apache-brightgreen";
+    licenseIcon = "Apache-brightgreen";
+
   } else if (answers.userLicense === "BSD 2-Clause License") {
     licenseURL = "https://opensource.org/licenses/BSD-2-Clause";
-    licenseImg = "BSD2-yellow";
+    licenseIcon = "BSD2-yellow";
 
 } else if (answers.userLicense === "BSD 3-Clause License") {
     licenseURL = "https://opensource.org/licenses/BSD-3-Clause";
-    licenseImg = "BSD3-yellow";
+    licenseIcon = "BSD3-yellow";
+
   } else if (answers.userLicense === "Boost Software License 1.0") {
     licenseURL = "https://www.boost.org/LICENSE_1_0.txt";
-    licenseImg = "Boost-orange";
+    licenseIcon = "Boost-orange";
 
 } else if (answers.userLicense === "Creative Commons Zero v1.0 Universal") {
     licenseURL = "https://creativecommons.org/publicdomain/zero/1.0/legalcode";
-    licenseImg = "CCZero-red";
+    licenseIcon = "CCZero-red";
 
 } else if (answers.userLicense === "Eclipse Public License 2.0") {
     licenseURL = "https://www.eclipse.org/legal/epl-2.0/";
-    licenseImg = "Eclipse-blue";
+    licenseIcon = "Eclipse-blue";
 
 } else if (answers.userLicense === "GNU Affero General Public License v3.0") {
     licenseURL = "https://www.gnu.org/licenses/agpl-3.0.en.html";
-    licenseImg = "GNUAffero-green";
+    licenseIcon = "GNUAffero-green";
 
 } else if (answers.userLicense === "GNU General Public License v2.0") {
     licenseURL = "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html";
-    licenseImg = "GNUv2-green";
+    licenseIcon = "GNUv2-green";
 
 } else if (answers.userLicense === "GNU Lesser Public License v2.1") {
     licenseURL = "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html";
-    licenseImg = "GNULesser-green";
+    licenseIcon = "GNULesser-green";
 
 }  else if (answers.userLicense === "GNU General Public License v3.0") {
   licenseURL = "https://www.gnu.org/licenses/gpl-3.0.en.html";
-  licenseImg = "GNUv3-green";
+  licenseIcon = "GNUv3-green";
 
 } else if (answers.userLicense === "MIT License") {
   licenseURL = "https://opensource.org/licenses/MIT";
-  licenseImg = "MIT-yellowgreen";
+  licenseIcon = "MIT-yellowgreen";
 
 } else if (answers.userLicense === "Mozilla Public License 2.0") {
     licenseURL = "https://www.mozilla.org/en-US/MPL/2.0/";
-    licenseImg = "MozillaPublic-blueviolet";
+    licenseIcon = "MozillaPublic-blueviolet";
 
 } else {
     licenseURL = "https://unlicense.org/";
@@ -107,8 +109,8 @@ function generateMarkdown(answers) {
 
   ## Contact Information
   * ${answers.name}
-  [E-mail:] ${answers.email}
-  [Github:] ${answers.github}
+  [E-mail:](mailto:${answers.email})
+  [Github:](github.com/${answers.github})
 
   ### User License
   
